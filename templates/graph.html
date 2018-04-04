@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Highcharts From Pandas Data</title>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+    <div class="container">
+    <h1>Damage and Frags over Time</h1>
+    <div id="my-chart"></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type = "text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        new Highcharts.Chart({{ chart | safe }});
+    </script>
+    </div>
+</body>
+</html>
